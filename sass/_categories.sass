@@ -1,0 +1,156 @@
+.categories
+    margin-bottom: 100px
+    padding: 0 40px
+    &__inner
+        max-width: 1300px
+        margin: 0 auto      
+    &__header
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 25px 0
+        border-bottom: 2px solid black
+        cursor: pointer
+    &__title
+        font-size: 44px
+        line-height: 44px
+        font-family: 'Univers LT W05_55 Roman'
+        text-transform: uppercase
+        font-weight: normal
+    &__arrow
+        transform: rotate(0deg)
+        transition: .3s
+        width: 40px
+    &__arrow.open
+        transform: rotate(180deg)
+    &__detail
+        height: 0px
+        overflow: hidden
+        transition: .3s
+    &__dettail.open
+
+    &__list
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        list-style: none
+        height: 96px
+    &__item
+        display: flex
+        justify-content: center
+        align-items: center
+        font-family: 'Univers LT W05_55 Roman'
+        height: 100%
+        font-size: 17px
+        line-height: 24px
+        text-transform: uppercase
+        margin-right: 25px
+        text-align: center
+        cursor: pointer
+    &__content
+        padding: 0px 60px 100px 60px
+
+    &__submenu-title
+        font-size: 44px
+        line-height: 44px
+        font-family: 'Univers LT W05_55 Roman'
+        text-transform: uppercase
+        font-weight: normal
+        margin-bottom: 25px
+    &__info
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        min-height: 170px
+    &__info1
+        width: 49%
+    &__text
+        font-family: 'Univers LT W05_55 Roman'
+        font-size: 17px
+        line-height: 24px
+        text-align: justify
+    &__gallery
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        margin-top: 65px
+    &__container
+        display: flex
+        justify-content: space-between
+        width: 49%
+    &__link
+        color: black
+        text-decoration: none
+        display: block
+        width: 48%
+    &__img
+        width: 100%
+    &__item-header
+        font-family: 'Univers LT W05_55 Roman'
+        font-weight: normal
+        text-transform: uppercase
+        margin-top: 4px
+        font-size: 10px
+    &__item-name
+        font-family: 'Univers LT W05_55 Roman'
+        font-weight: normal
+        font-size: 14px
+        margin-top: 3px
+    &__item-price
+        font-family: 'Univers LT W05_55 Roman'
+        font-weight: normal
+        font-size: 14px
+
+@media (max-width: 1200px)
+    .categories
+        &__title
+            font-size: 33px
+            line-height: 35px
+        &__submenu-title
+            font-size: 36px
+        &__text
+            font-size: 13px
+            line-height: 21px
+        &__item
+            font-size: 16px
+        &__arrow
+            width: 30px
+        &__header
+            padding: 15px 0
+        &__list
+            justify-content: space-between
+            gap: 20px
+        &__item
+            margin-right: 0px
+        &__content
+            padding: 0
+            padding-bottom: 100px
+
+@media (max-width: 840px)
+    .categories
+        padding: 0 20px
+        margin-bottom: 50px
+        &__submenu
+            overflow-x: scroll
+            width: 100%
+            scrollbar-width: 0px
+            &::-webkit-scrollbar
+                display: none
+        &__list
+            justify-content: space-between
+            width: 620px
+        &__item
+            width: 170px
+            text-align: left
+        &__info
+            display: block
+        &__info1
+            width: 100%
+        &__gallery
+            flex-wrap: wrap
+        &__container
+            width: 100%
+        &__container:first-child
+            margin-bottom: 25px
+        &__link
+            width: 49%
